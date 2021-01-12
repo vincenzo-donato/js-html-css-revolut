@@ -1,0 +1,98 @@
+/* CODICE CSS GENERALE */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/* CODICE CSS UL GENERALE */
+ul{
+    list-style: none;
+    padding:10px;
+}
+
+.margine{
+    margin-top: 10px;
+}
+
+/* CODICE CSS UL NAV BAR CONTENITORE */
+ul.nav-bar-header{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* CODICE CSS UL LI NAV BAR CONTENITORE */
+ul.nav-bar-header li.open {
+    text-decoration: none;
+    margin: 10px;
+    cursor: pointer;
+    color:lightgrey;
+    display: inline-block;
+}
+
+/* CODICE CSS UL LI NAV BAR CONTENITORE ATTIV CON HOVER */
+ul.nav-bar-header li.active{
+    color:black;
+}
+
+/* CODICE CSS MENU INVISIVIBILE */
+ul.nav-bar-header li ul{
+    opacity: 0;
+    margin-top: 10px;
+    position: absolute;
+    color:lightgrey;
+}
+
+/* CODICE CSS MENU VISIVIBILE */
+ul.nav-bar-header li ul.show{
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 10px rgba(23, 29, 2, 0.81);
+}
+
+.visibile{
+    color: black;
+}
+
+ul.nav-bar-header li ul li{
+    margin: 10px 0px;
+}
+
+/* CODICE CSS FRECCIE GIU SU LI MENU  */
+ul.nav-bar-header li.freccie{
+    margin-top: 11px;
+    color: lightgrey;
+    cursor: pointer;
+}
+
+/* PER CAMBIARE COLORE AL LI FRECCIA */
+ul.nav-bar-header li.freccie.active{
+    color: black;
+}
+
+/* CSS PER CAMBIO FRECCIA DA VISIBILE AD INVISIBILE  */
+ul.nav-bar-header li.freccie i.nascondi{
+    display: none;
+}
+
+/* CSS PER COLORE MENU FRECCIA */
+ul.nav-bar-header li.freccie ul li{
+    color: lightgrey;
+}
+
+/* CSS PER COLORE MENU FRECCIA CON HOVER */
+ul.nav-bar-header li.freccie ul li.active{
+    color: black;
+}
+
+/* CODICE CSS BOTTONE  */
+ul.nav-bar-header li Button{
+    margin-top: -10px;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}
